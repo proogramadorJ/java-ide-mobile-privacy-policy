@@ -54,17 +54,17 @@ footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
   <h1>Política de privacidade</h1>
   <p class="updated">Última atualização: 13 de novembro de 2026</p>
   <div class="intro"><p>Esta política explica como o Java IDE Mobile, app da ByteCraft para escrever, compilar e executar programas Java no Android, trata os seus dados.</p>
-<p>Resumo: o app não tem cadastro, anúncios nem analytics, e a ByteCraft não recebe nenhum dado seu. Seus projetos ficam no aparelho e só saem dele quando você usa uma função de rede, direto para o serviço que você escolheu.</p></div>
+<p>Resumo: o app não tem cadastro, anúncios nem analytics. Seus projetos ficam no aparelho e só saem dele quando você usa uma função de rede, direto para o serviço que você escolheu. A ByteCraft recebe só relatórios de falha, quando o app fecha por um erro, e você pode desligá-los.</p></div>
   <section id="data">
     <h2>Dados que o app usa</h2>
     <p>Ficam só no aparelho, no armazenamento privado do app:</p>
 <ul><li>seus projetos, arquivos e o histórico do git;</li><li>as configurações (tema, tamanho da fonte, argumentos de compilação e execução);</li><li>o nome e o e-mail que você informar como identidade do git, gravados nos seus commits;</li><li>os tokens de acesso que você cadastrar para remotos git, criptografados;</li><li>as dependências Maven baixadas e os arquivos internos do compilador e do autocompletar, que rodam no próprio aparelho.</li></ul>
-<p>O app não coleta localização, contatos, identificadores de publicidade nem estatísticas de uso, e não envia relatórios de falha.</p>
+<p>O app não coleta localização, contatos, identificadores de publicidade nem estatísticas de uso.</p>
   </section>
   <section id="sharing">
     <h2>Quando dados saem do aparelho</h2>
-    <p>A ByteCraft não tem servidor para o app: nenhum dado vem para nós, e não vendemos nem compartilhamos dados. Algo sai do aparelho só nestes casos, sempre por uma ação sua:</p>
-<ul><li>Maven Central (Sonatype): ao buscar uma dependência, o termo buscado vai para search.maven.org; ao compilar um projeto Maven, bibliotecas e plugins são baixados de repo1.maven.org. Como em qualquer acesso à internet, o serviço recebe o endereço IP do aparelho. Política: <a href="https://www.sonatype.com/privacy-policy" rel="noopener">https://www.sonatype.com/privacy-policy</a></li><li>Servidores git que você escolher (por exemplo, GitHub ou GitLab): clone, pull e push trocam o conteúdo do repositório com o endereço remoto informado. O token cadastrado para um servidor é enviado só para ele, para autenticar. O que acontece lá segue a política desse serviço.</li><li>Programas que você executa: o seu código e os comandos do terminal (como curl ou git) podem acessar a internet. O app não vê nem guarda esse tráfego.</li></ul>
+    <p>A ByteCraft não vende nem compartilha dados. Algo sai do aparelho só nestes casos:</p>
+<ul><li>Relatórios de falha (Firebase Crashlytics, do Google): se o app fecha por um erro, ele envia o erro e o rastro da pilha, a versão do app, o modelo do aparelho, a versão do Android, o estado do aparelho no momento (memória, espaço livre, orientação), um identificador aleatório da instalação e, como em qualquer acesso à internet, o endereço IP. Não vão seus projetos, seu código, seus arquivos nem seus tokens. O Google processa esses dados em nome da ByteCraft, só para corrigirmos erros. Para desligar: Configurações → Privacidade. Política: <a href="https://firebase.google.com/support/privacy" rel="noopener">https://firebase.google.com/support/privacy</a></li><li>Maven Central (Sonatype): ao buscar uma dependência, o termo buscado vai para search.maven.org; ao compilar um projeto Maven, bibliotecas e plugins são baixados de repo1.maven.org. Como em qualquer acesso à internet, o serviço recebe o endereço IP do aparelho. Política: <a href="https://www.sonatype.com/privacy-policy" rel="noopener">https://www.sonatype.com/privacy-policy</a></li><li>Servidores git que você escolher (por exemplo, GitHub ou GitLab): clone, pull e push trocam o conteúdo do repositório com o endereço remoto informado. O token cadastrado para um servidor é enviado só para ele, para autenticar. O que acontece lá segue a política desse serviço.</li><li>Programas que você executa: o seu código e os comandos do terminal (como curl ou git) podem acessar a internet. O app não vê nem guarda esse tráfego.</li></ul>
 <p>Ao exportar um projeto em .zip, o arquivo vai só para o local que você escolher no seletor do Android.</p>
   </section>
   <section id="backup">
@@ -78,11 +78,11 @@ footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
   </section>
   <section id="retention">
     <h2>Por quanto tempo os dados ficam</h2>
-    <p>Tudo o que está no aparelho fica até você apagar (o projeto, o token ou a identidade do git, nas telas do app) ou desinstalar o app. Limpar os dados do app nas configurações do Android também apaga tudo. O que foi enviado ao Maven Central ou a um servidor git segue os prazos desses serviços.</p>
+    <p>Tudo o que está no aparelho fica até você apagar (o projeto, o token ou a identidade do git, nas telas do app) ou desinstalar o app. Limpar os dados do app nas configurações do Android também apaga tudo. Os relatórios de falha ficam no Firebase por 90 dias e depois são apagados. O que foi enviado ao Maven Central ou a um servidor git segue os prazos desses serviços.</p>
   </section>
   <section id="security">
     <h2>Segurança</h2>
-    <p>Os dados do app ficam no armazenamento privado dele, que outros apps não acessam. Os tokens são criptografados (AES) com uma chave da Android Keystore, que não sai do aparelho, e só existem em texto aberto na memória durante o comando git. A busca e os downloads do Maven usam HTTPS; para os remotos git, use endereços https://.</p>
+    <p>Os dados do app ficam no armazenamento privado dele, que outros apps não acessam. Os tokens são criptografados (AES) com uma chave da Android Keystore, que não sai do aparelho, e só existem em texto aberto na memória durante o comando git. Os relatórios de falha, a busca e os downloads do Maven usam HTTPS; para os remotos git, use endereços https://.</p>
   </section>
   <section id="children">
     <h2>Crianças</h2>
@@ -90,7 +90,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
   </section>
   <section id="rights">
     <h2>Seus direitos (LGPD)</h2>
-    <p>Pela Lei Geral de Proteção de Dados (Lei 13.709/2018), você pode pedir confirmação do tratamento, acesso, correção, exclusão e portabilidade dos seus dados, além de informações sobre compartilhamento. Como a ByteCraft não recebe nem guarda dados seus, você mesmo vê, altera e apaga tudo no app. Os dados só vão a terceiros para executar o que você pediu (busca, download ou operação git). Dúvidas ou pedidos: <a href="mailto:bytecraftappsdev@gmail.com">bytecraftappsdev@gmail.com</a>. Respondemos em até 15 dias.</p>
+    <p>Pela Lei Geral de Proteção de Dados (Lei 13.709/2018), você pode pedir confirmação do tratamento, acesso, correção, exclusão e portabilidade dos seus dados, além de informações sobre compartilhamento. Fora os relatórios de falha, a ByteCraft não recebe dados seus: você mesmo vê, altera e apaga tudo no app. Os relatórios não incluem nome nem e-mail, são apagados após 90 dias e podem ser desligados a qualquer momento; a base legal é o legítimo interesse de manter o app funcionando. Os demais dados só vão a terceiros para executar o que você pediu (busca, download ou operação git). Dúvidas ou pedidos: <a href="mailto:bytecraftappsdev@gmail.com">bytecraftappsdev@gmail.com</a>. Respondemos em até 15 dias.</p>
   </section>
   <section id="changes">
     <h2>Mudanças nesta política</h2>

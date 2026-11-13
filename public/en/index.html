@@ -47,17 +47,17 @@ footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
   <h1>Privacy policy</h1>
   <p class="updated">Last updated: November 13, 2026</p>
   <div class="intro"><p>This policy explains how Java IDE Mobile, an app by ByteCraft for writing, compiling and running Java programs on Android, handles your data.</p>
-<p>In short: the app has no sign-up, ads or analytics, and ByteCraft receives none of your data. Your projects stay on the device and only leave it when you use a network feature, going straight to the service you chose.</p></div>
+<p>In short: the app has no sign-up, ads or analytics. Your projects stay on the device and only leave it when you use a network feature, going straight to the service you chose. ByteCraft only receives crash reports when the app closes because of an error, and you can turn them off.</p></div>
   <section id="data">
     <h2>Data the app uses</h2>
     <p>Kept only on the device, in the app&#x27;s private storage:</p>
 <ul><li>your projects, files and git history;</li><li>settings (theme, font size, compile and run arguments);</li><li>the name and email you enter as your git identity, which are written into your commits;</li><li>access tokens you add for git remotes, encrypted;</li><li>downloaded Maven dependencies and the internal files of the compiler and code completion, which run on the device itself.</li></ul>
-<p>The app does not collect location, contacts, advertising IDs or usage statistics, and does not send crash reports.</p>
+<p>The app does not collect location, contacts, advertising IDs or usage statistics.</p>
   </section>
   <section id="sharing">
     <h2>When data leaves the device</h2>
-    <p>ByteCraft runs no server for the app: no data comes to us, and we do not sell or share data. Something leaves the device only in these cases, always because of something you did:</p>
-<ul><li>Maven Central (Sonatype): when you search for a dependency, the search term goes to search.maven.org; when a Maven project builds, libraries and plugins are downloaded from repo1.maven.org. As with any internet access, the service receives the device&#x27;s IP address. Policy: <a href="https://www.sonatype.com/privacy-policy" rel="noopener">https://www.sonatype.com/privacy-policy</a></li><li>Git servers you choose (for example GitHub or GitLab): clone, pull and push exchange the repository contents with the remote address you entered. The token you added for a server is sent only to that server, to authenticate. What happens there follows that service&#x27;s policy.</li><li>Programs you run: your own code and terminal commands (such as curl or git) can access the internet. The app does not see or store that traffic.</li></ul>
+    <p>ByteCraft does not sell or share data. Something leaves the device only in these cases:</p>
+<ul><li>Crash reports (Firebase Crashlytics, by Google): if the app closes because of an error, it sends the error and stack trace, the app version, the device model, the Android version, the device state at that moment (memory, free space, orientation), a random installation identifier and, as with any internet access, the IP address. Your projects, code, files and tokens are not sent. Google processes this data on behalf of ByteCraft, only so we can fix errors. To turn it off: Settings → Privacy. Policy: <a href="https://firebase.google.com/support/privacy" rel="noopener">https://firebase.google.com/support/privacy</a></li><li>Maven Central (Sonatype): when you search for a dependency, the search term goes to search.maven.org; when a Maven project builds, libraries and plugins are downloaded from repo1.maven.org. As with any internet access, the service receives the device&#x27;s IP address. Policy: <a href="https://www.sonatype.com/privacy-policy" rel="noopener">https://www.sonatype.com/privacy-policy</a></li><li>Git servers you choose (for example GitHub or GitLab): clone, pull and push exchange the repository contents with the remote address you entered. The token you added for a server is sent only to that server, to authenticate. What happens there follows that service&#x27;s policy.</li><li>Programs you run: your own code and terminal commands (such as curl or git) can access the internet. The app does not see or store that traffic.</li></ul>
 <p>When you export a project as a .zip, the file only goes to the location you pick in the Android file picker.</p>
   </section>
   <section id="backup">
@@ -71,11 +71,11 @@ footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
   </section>
   <section id="retention">
     <h2>How long data is kept</h2>
-    <p>Everything on the device stays until you delete it (the project, token or git identity, in the app&#x27;s screens) or uninstall the app. Clearing the app&#x27;s data in Android settings also deletes everything. Whatever was sent to Maven Central or a git server follows those services&#x27; retention periods.</p>
+    <p>Everything on the device stays until you delete it (the project, token or git identity, in the app&#x27;s screens) or uninstall the app. Clearing the app&#x27;s data in Android settings also deletes everything. Crash reports are kept in Firebase for 90 days and then deleted. Whatever was sent to Maven Central or a git server follows those services&#x27; retention periods.</p>
   </section>
   <section id="security">
     <h2>Security</h2>
-    <p>The app&#x27;s data stays in its private storage, which other apps cannot access. Tokens are encrypted (AES) with an Android Keystore key that never leaves the device, and only exist in plain text in memory while a git command runs. Maven search and downloads use HTTPS; for git remotes, use https:// addresses.</p>
+    <p>The app&#x27;s data stays in its private storage, which other apps cannot access. Tokens are encrypted (AES) with an Android Keystore key that never leaves the device, and only exist in plain text in memory while a git command runs. Crash reports, Maven search and downloads use HTTPS; for git remotes, use https:// addresses.</p>
   </section>
   <section id="children">
     <h2>Children</h2>
@@ -83,7 +83,7 @@ footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
   </section>
   <section id="rights">
     <h2>Your rights</h2>
-    <p>Under data protection laws such as Brazil&#x27;s LGPD and the GDPR, you may ask for confirmation of processing, access, correction, deletion and portability of your data, and for information about sharing. Since ByteCraft neither receives nor stores your data, you can see, change and delete everything yourself in the app. Data only goes to third parties to carry out what you asked for (a search, a download or a git operation). Questions or requests: <a href="mailto:bytecraftappsdev@gmail.com">bytecraftappsdev@gmail.com</a>. We reply within 15 days.</p>
+    <p>Under data protection laws such as Brazil&#x27;s LGPD and the GDPR, you may ask for confirmation of processing, access, correction, deletion and portability of your data, and for information about sharing. Apart from crash reports, ByteCraft receives none of your data: you can see, change and delete everything yourself in the app. Crash reports contain no name or email, are deleted after 90 days and can be turned off at any time; the legal basis is our legitimate interest in keeping the app working. Other data only goes to third parties to carry out what you asked for (a search, a download or a git operation). Questions or requests: <a href="mailto:bytecraftappsdev@gmail.com">bytecraftappsdev@gmail.com</a>. We reply within 15 days.</p>
   </section>
   <section id="changes">
     <h2>Changes to this policy</h2>
