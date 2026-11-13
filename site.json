@@ -1,0 +1,66 @@
+{
+  "baseUrl": "https://java-ide-mobile-privacy.web.app",
+  "email": "bytecraftappsdev@gmail.com",
+  "developer": "ByteCraft",
+  "year": 2026,
+  "icon": "C:/Users/pedro/Desenvolvimento/mobile/JavaIDEMobile/app/src/main/ic_launcher-playstore.png",
+  "theme": {
+    "primary": "#14213D"
+  },
+  "source": {
+    "type": "android-strings",
+    "res": "C:/Users/pedro/Desenvolvimento/mobile/JavaIDEMobile/app/src/main/res",
+    "sections": [
+      "data",
+      "sharing",
+      "backup",
+      "permissions",
+      "retention",
+      "security",
+      "children",
+      "rights",
+      "changes",
+      "contact"
+    ]
+  },
+  "languages": [
+    {
+      "code": "pt",
+      "path": "/",
+      "htmlLang": "pt-BR",
+      "label": "Português",
+      "navLabel": "Idioma",
+      "resFolder": "values-pt",
+      "appName": "Java IDE Mobile",
+      "date": "13 de novembro de 2026",
+      "updatedLabel": "Última atualização: {date}",
+      "description": "Política de privacidade do Java IDE Mobile, da ByteCraft: o app não tem cadastro, anúncios nem analytics, e seus projetos ficam no aparelho."
+    },
+    {
+      "code": "en",
+      "path": "/en/",
+      "htmlLang": "en-US",
+      "label": "English",
+      "navLabel": "Language",
+      "resFolder": "values",
+      "appName": "Java IDE Mobile",
+      "date": "November 13, 2026",
+      "updatedLabel": "Last updated: {date}",
+      "description": "Privacy policy of Java IDE Mobile by ByteCraft: no sign-up, ads or analytics, and your projects stay on your device."
+    },
+    {
+      "code": "es",
+      "path": "/es/",
+      "htmlLang": "es",
+      "label": "Español",
+      "navLabel": "Idioma",
+      "resFolder": "values-es",
+      "appName": "Java IDE Mobile",
+      "date": "13 de noviembre de 2026",
+      "updatedLabel": "Última actualización: {date}",
+      "description": "Política de privacidad de Java IDE Mobile, de ByteCraft: sin registro, anuncios ni analítica, y tus proyectos se quedan en el dispositivo."
+    }
+  ],
+  "extraPages": [],
+  "appAdsTxt": ""
+}

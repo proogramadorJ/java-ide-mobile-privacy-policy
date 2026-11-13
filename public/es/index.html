@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad · Java IDE Mobile</title>
+  <meta name="description" content="Política de privacidad de Java IDE Mobile, de ByteCraft: sin registro, anuncios ni analítica, y tus proyectos se quedan en el dispositivo.">
+  <link rel="canonical" href="https://java-ide-mobile-privacy.web.app/es/">
+  <link rel="alternate" hreflang="pt-BR" href="https://java-ide-mobile-privacy.web.app/">
+  <link rel="alternate" hreflang="en-US" href="https://java-ide-mobile-privacy.web.app/en/">
+  <link rel="alternate" hreflang="es" href="https://java-ide-mobile-privacy.web.app/es/">
+  
+  <style>
+:root { color-scheme: light dark;
+  --bg: #f9f9fe; --surface: #ffffff; --text: #1a1c20; --muted: #434750;
+  --primary: #14213D; --outline: #c3c6d1; --chip: #d6e3ff; --on-chip: #001b3d; }
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #111318; --surface: #1d2024; --text: #e2e2e9; --muted: #c3c6d1;
+  --primary: #a9c7ff; --outline: #43474e; --chip: #2b4678; --on-chip: #d6e3ff; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+header { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; color: var(--primary); }
+.brand img { width: 40px; height: 40px; border-radius: 10px; }
+nav { display: flex; gap: 8px; flex-wrap: wrap; }
+nav a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 20px;
+  border: 1px solid var(--outline); color: var(--text); text-decoration: none; font-size: 14px; }
+nav a[aria-current="page"] { background: var(--chip); color: var(--on-chip); border-color: transparent; font-weight: 600; }
+h1 { font-size: 30px; line-height: 1.25; margin: 32px 0 4px; }
+.updated { color: var(--muted); margin: 0 0 24px; font-size: 14px; }
+.intro { font-size: 17px; }
+section { background: var(--surface); border: 1px solid var(--outline); border-radius: 16px; padding: 16px 20px; margin: 16px 0; }
+h2 { font-size: 18px; margin: 0 0 6px; color: var(--primary); }
+section p, section ul { margin: 0 0 8px; } section > :last-child { margin-bottom: 0; }
+a { color: var(--primary); overflow-wrap: anywhere; }
+footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand"><img src="/icon.png" alt="">Java IDE Mobile</div>
+    <nav aria-label="Idioma"><a href="/?lang=pt" hreflang="pt-BR" data-lang="pt">Português</a><a href="/en/" hreflang="en-US" data-lang="en">English</a><a href="/es/" hreflang="es" data-lang="es" aria-current="page">Español</a></nav>
+  </header>
+  <h1>Política de privacidad</h1>
+  <p class="updated">Última actualización: 13 de noviembre de 2026</p>
+  <div class="intro"><p>Esta política explica cómo Java IDE Mobile, app de ByteCraft para escribir, compilar y ejecutar programas Java en Android, trata tus datos.</p>
+<p>En resumen: la app no tiene registro, anuncios ni analítica, y ByteCraft no recibe ningún dato tuyo. Tus proyectos se quedan en el dispositivo y solo salen de él cuando usas una función de red, directo al servicio que elegiste.</p></div>
+  <section id="data">
+    <h2>Datos que usa la app</h2>
+    <p>Se quedan solo en el dispositivo, en el almacenamiento privado de la app:</p>
+<ul><li>tus proyectos, archivos e historial de git;</li><li>la configuración (tema, tamaño de letra, argumentos de compilación y ejecución);</li><li>el nombre y el correo que indiques como identidad de git, que quedan en tus commits;</li><li>los tokens de acceso que agregues para remotos git, cifrados;</li><li>las dependencias Maven descargadas y los archivos internos del compilador y del autocompletado, que funcionan en el propio dispositivo.</li></ul>
+<p>La app no recopila ubicación, contactos, identificadores de publicidad ni estadísticas de uso, y no envía informes de fallos.</p>
+  </section>
+  <section id="sharing">
+    <h2>Cuándo salen datos del dispositivo</h2>
+    <p>ByteCraft no tiene servidor para la app: ningún dato llega a nosotros, y no vendemos ni compartimos datos. Algo sale del dispositivo solo en estos casos, siempre por una acción tuya:</p>
+<ul><li>Maven Central (Sonatype): al buscar una dependencia, el término buscado va a search.maven.org; al compilar un proyecto Maven, las bibliotecas y plugins se descargan de repo1.maven.org. Como en cualquier acceso a internet, el servicio recibe la dirección IP del dispositivo. Política: <a href="https://www.sonatype.com/privacy-policy" rel="noopener">https://www.sonatype.com/privacy-policy</a></li><li>Servidores git que elijas (por ejemplo, GitHub o GitLab): clone, pull y push intercambian el contenido del repositorio con la dirección remota indicada. El token agregado para un servidor se envía solo a ese servidor, para autenticar. Lo que ocurre allí sigue la política de ese servicio.</li><li>Programas que ejecutas: tu código y los comandos de la terminal (como curl o git) pueden acceder a internet. La app no ve ni guarda ese tráfico.</li></ul>
+<p>Al exportar un proyecto en .zip, el archivo va solo al lugar que elijas en el selector de Android.</p>
+  </section>
+  <section id="backup">
+    <h2>Copia de seguridad de Android</h2>
+    <p>Si la copia de seguridad de Android está activada en tu cuenta de Google, el sistema puede copiar los proyectos y la configuración de la app a esa copia, según la política de Google. Los tokens de los remotos git, el entorno Java y las dependencias descargadas quedan fuera de la copia.</p>
+  </section>
+  <section id="permissions">
+    <h2>Permisos</h2>
+    <ul><li>Internet y estado de la red: para las funciones de red descritas arriba.</li><li>Notificaciones y servicio en primer plano: mantienen la terminal y los programas en ejecución cuando la app pasa a segundo plano, con una notificación que permite detener todo.</li></ul>
+<p>La app no pide acceso a tus archivos, cámara, micrófono, ubicación ni contactos. Importar y exportar proyectos usa el selector de archivos de Android, solo con lo que elijas.</p>
+  </section>
+  <section id="retention">
+    <h2>Cuánto tiempo se guardan los datos</h2>
+    <p>Todo lo que está en el dispositivo se queda hasta que lo borres (el proyecto, el token o la identidad de git, en las pantallas de la app) o desinstales la app. Borrar los datos de la app en la configuración de Android también elimina todo. Lo que se envió a Maven Central o a un servidor git sigue los plazos de esos servicios.</p>
+  </section>
+  <section id="security">
+    <h2>Seguridad</h2>
+    <p>Los datos de la app están en su almacenamiento privado, al que otras apps no acceden. Los tokens se cifran (AES) con una clave del Android Keystore que no sale del dispositivo, y solo existen en texto plano en la memoria durante el comando git. La búsqueda y las descargas de Maven usan HTTPS; para los remotos git, usa direcciones https://.</p>
+  </section>
+  <section id="children">
+    <h2>Niños</h2>
+    <p>La app está destinada a personas de 13 años o más y no está dirigida a niños. No recopila datos de nadie, niños incluidos.</p>
+  </section>
+  <section id="rights">
+    <h2>Tus derechos</h2>
+    <p>Según las leyes de protección de datos, como la LGPD de Brasil y el RGPD, puedes pedir confirmación del tratamiento, acceso, corrección, eliminación y portabilidad de tus datos, e información sobre su uso compartido. Como ByteCraft no recibe ni guarda tus datos, tú mismo ves, cambias y borras todo en la app. Los datos solo van a terceros para hacer lo que pediste (una búsqueda, una descarga o una operación git). Dudas o solicitudes: <a href="mailto:bytecraftappsdev@gmail.com">bytecraftappsdev@gmail.com</a>. Respondemos en un plazo de 15 días.</p>
+  </section>
+  <section id="changes">
+    <h2>Cambios en esta política</h2>
+    <p>Si la app empieza a tratar datos de otra forma, esta política se actualizará antes de la versión que traiga el cambio, con la nueva fecha arriba, en la app y en el sitio.</p>
+  </section>
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>ByteCraft: <a href="mailto:bytecraftappsdev@gmail.com">bytecraftappsdev@gmail.com</a></p>
+  </section>
+  <footer>© 2026 ByteCraft · <a href="mailto:bytecraftappsdev@gmail.com">bytecraftappsdev@gmail.com</a></footer>
+</main>
+<script>
+document.querySelectorAll('nav a[data-lang]').forEach(function (a) {
+  a.addEventListener('click', function () { try { localStorage.setItem('lang', a.getAttribute('data-lang')); } catch (e) {} });
+});
+</script>
+</body>
+</html>
